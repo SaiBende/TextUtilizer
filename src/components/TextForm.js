@@ -39,6 +39,7 @@ export default function TextForm(props) {
         navigator.clipboard.writeText(text)
             .then(() => {
                 setCopied(true);
+                alert("text copied to clipboard");
             })
             .catch(err => {
                 console.error('Failed to copy text: ', err);
